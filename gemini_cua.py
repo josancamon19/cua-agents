@@ -40,6 +40,7 @@ def _usage_int(usage_meta, name: str) -> int:
     value = getattr(usage_meta, name, 0) if usage_meta else 0
     return int(value or 0)
 
+
 SYSTEM_PROMPT_TEMPLATE = (Path(__file__).with_name("prompt.txt")).read_text().strip()
 GEMINI_DESKTOP_NOTE = """
 Important for Gemini Computer Use: even though the API environment is named browser,

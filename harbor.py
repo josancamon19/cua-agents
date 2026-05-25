@@ -11,13 +11,14 @@ from typing import Any
 
 from harbor.agents.base import AgentContext, BaseAgent
 
-from .anthropic_cua import AnthropicCUAAgent
-from .gemini_cua import GeminiCUAAgent
-from .openai_cua import OpenAICUAAgent
 from env.agents.utils.pricing import estimate_cost
 from env.common import ensure_dotenv
 from env.harbor.utils.trajectory import TrajectoryBuilder
 from env.harbor.utils.verifier import run_evaluation_use_computer
+
+from .anthropic_cua import AnthropicCUAAgent
+from .gemini_cua import GeminiCUAAgent
+from .openai_cua import OpenAICUAAgent
 
 logger = logging.getLogger(__name__)
 
